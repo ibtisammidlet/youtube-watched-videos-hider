@@ -10,7 +10,7 @@
 // @downloadURL https://github.com/ibtisammidlet/youtube-watched-videos-hider/raw/master/youtube-watched-videos-hider.user.js
 // @supportURL  https://rebrand.ly/wanna-me
 // @date        2019-05-05
-// @homepage    
+// @homepage
 // @license     do what the fuck you want to do public license >>http://www.wtfpl.net/about/
 // @require     https://code.jquery.com/jquery-3.4.0.min.js
 // @grant       GM_addStyle
@@ -18,7 +18,7 @@
 
 
 
-if (window.location.href.indexOf('youtube.com/playlist?list=') != -1) {
+if (window.location.href.indexOf('www.youtube.com/playlist?list=') != -1) {
 $(document).bind('DOMNodeInserted', function(e) {
     var element = e.target;
     setTimeout(function() {
@@ -29,7 +29,7 @@ $(document).bind('DOMNodeInserted', function(e) {
 
 } else {
 
-
+if (window.location.href.indexOf('www.youtube.com') != -1) {
 $(document).bind('DOMNodeInserted', function(e) {
     var element = e.target;
     setTimeout(function() {
@@ -37,5 +37,16 @@ $(document).bind('DOMNodeInserted', function(e) {
         $('#overlays.ytd-thumbnail #progress').parent().parent().parent().parent().parent().parent().hide();
     }, 0);
 });
+}
+}
 
+
+if (window.location.href.indexOf('m.youtube.com') != -1) {
+$(document).bind('DOMNodeInserted', function(e) {
+    var element = e.target;
+    setTimeout(function() {
+        console.log("yt mobile");
+        $('ytm-thumbnail-overlay-resume-playback-renderer .thumbnail-overlay-resume-playback-progress').parent().parent().parent().parent().parent().parent().hide();
+    }, 0);
+});
 }
