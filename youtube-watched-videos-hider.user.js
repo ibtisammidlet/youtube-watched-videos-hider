@@ -11,7 +11,7 @@
 // @supportURL  https://rebrand.ly/wanna-me
 // @date        2019-05-05
 // @homepage
-// @license     do what the fuck you want to do public license >>http://www.wtfpl.net/about/
+// @license     MIT
 // @require     https://code.jquery.com/jquery-3.4.0.min.js
 // @grant       GM_addStyle
 // ==/UserScript==
@@ -77,4 +77,5 @@ if (window.location.href.indexOf('m.youtube.com') != -1) {
 }
 
 
- }, 500);
+ }, 1500);
+
