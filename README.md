@@ -7,7 +7,8 @@ she hide watched videos in YouTube desktop and mobile its working in all page of
 
 new version with so much improvement:
 
-1.7
+v1.7
+
 -less resource usage 
 -fix not working in search YouTube result page 
 
