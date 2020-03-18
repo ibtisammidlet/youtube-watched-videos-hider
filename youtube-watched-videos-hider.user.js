@@ -16,37 +16,46 @@
 // @grant       GM_addStyle
 // ==/UserScript==
 
-
+//** the interval for the all script
+ setInterval(function(){
 
 if (window.location.href.indexOf('www.youtube.com/playlist?list=') != -1) {
-$(document).bind('DOMNodeInserted', function(e) {
-    var element = e.target;
-    setTimeout(function() {
-        console.log("script excuted");
         $('#overlays.ytd-thumbnail #progress').parent().parent().parent().parent().parent().parent().parent().hide();
-    }, 0);
-});
-
 } else {
 
 if (window.location.href.indexOf('www.youtube.com') != -1) {
-$(document).bind('DOMNodeInserted', function(e) {
-    var element = e.target;
-    setTimeout(function() {
-        console.log("else");
-        $('#overlays.ytd-thumbnail #progress').parent().parent().parent().parent().parent().parent().hide();
-    }, 0);
-});
+
+
+function channel(){
+if (window.location.href.indexOf('channel/') != -1) {
+$('#overlays.ytd-thumbnail #progress').parent().parent().parent().parent().parent().parent().hide();
 }
+};
+
+function results(){
+if (window.location.href.indexOf('results?search_query=') != -1) {
+$('#overlays.ytd-thumbnail #progress').parent().parent().parent().parent().parent().parent().hide();
 }
+};
+
+function general(){
+if (window.location.href.indexOf('results?search_query=') <= 0 && window.location.href.indexOf('channel/') <= 0) {
+$('#overlays.ytd-thumbnail #progress').parent().parent().parent().parent().parent().parent().parent().parent().hide();
+}
+};
+
+
+channel();
+results();
+general();
+
+}
+};
 
 
 if (window.location.href.indexOf('m.youtube.com') != -1) {
-$(document).bind('DOMNodeInserted', function(e) {
-    var element = e.target;
-    setTimeout(function() {
-        console.log("yt mobile");
         $('ytm-thumbnail-overlay-resume-playback-renderer .thumbnail-overlay-resume-playback-progress').parent().parent().parent().parent().parent().parent().hide();
-    }, 0);
-});
 }
+
+
+ }, 500);
