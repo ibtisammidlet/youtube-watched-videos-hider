@@ -21,3 +21,4 @@ v1.4
 -decrease resource usage
 
 for firefox >>https://addons.mozilla.org/en-US/firefox/addon/youtube-watched-videos-hider/
+main develepment site>>https://justinmidlet.blogspot.com/2019/05/youtube-watched-videos-hider.html
