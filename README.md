@@ -10,6 +10,7 @@ new version with so much improvement:
 v1.7
 
 -less resource usage 
+
 -fix not working in search YouTube result page 
 
 v1.5
