@@ -4,14 +4,14 @@
 // @namespace   youtube-watched-videos-hider-userscript-bystorebitid@gmail.com
 // @icon        https://github.com/ibtisammidlet/youtube-watched-videos-hider/raw/master/screenshot.png
 // @include     *.youtube.com/*
-// @description like the name
-// @version     1.8
+// @description like the name and it's simple and effective
+// @version     1.9
 // @updateURL   https://github.com/ibtisammidlet/youtube-watched-videos-hider/raw/master/youtube-watched-videos-hider.meta.js
 // @downloadURL https://github.com/ibtisammidlet/youtube-watched-videos-hider/raw/master/youtube-watched-videos-hider.user.js
-// @supportURL  https://rebrand.ly/wanna-me
-// @date        2019-05-05
-// @homepage
-// @license     MIT
+// @supportURL  https://justinmidlet.blogspot.com/2019/05/youtube-watched-videos-hider.html
+// @date        2020-03-24
+// @homepage    https://justinmidlet.blogspot.com/2019/05/youtube-watched-videos-hider.html
+// @license     All Rights Reserved
 // @require     https://code.jquery.com/jquery-3.4.0.min.js
 // @grant       GM_addStyle
 // ==/UserScript==
@@ -48,13 +48,14 @@ $('#overlays.ytd-thumbnail #progress').parent().parent().parent().parent().paren
 function watch(){
 if (window.location.href.indexOf('www.youtube.com/watch?v=') != -1) {
 $('#overlays.ytd-thumbnail #progress').parent().parent().parent().parent().parent().parent().hide();
+$("#playlist #overlays.ytd-thumbnail #progress").parent().parent().parent().parent().parent().parent().parent().parent().hide();
 }
 };
 
 
 
 function general(){
-if (window.location.href.indexOf('results?search_query=') <= 0 && window.location.href.indexOf('channel/') <= 0 && window.location.href.indexOf('www.youtube.com/feed/subscriptions') <= 0 && window.location.href.indexOf('www.youtube.com/watch?v=') <= 0) {
+if (window.location.href.indexOf('results?search_query=') <= 0 && window.location.href.indexOf('channel/') <= 0 && window.location.href.indexOf('www.youtube.com/feed/subscriptions') <= 0 && window.location.href.indexOf('www.youtube.com/watch?v=') <= 0 && window.location.href.indexOf('www.youtube.com/feed/history') <= 0 ) {
 $('#overlays.ytd-thumbnail #progress').parent().parent().parent().parent().parent().parent().parent().parent().hide();
 }
 };
@@ -78,4 +79,3 @@ if (window.location.href.indexOf('m.youtube.com') != -1) {
 
 
  }, 1500);
-
