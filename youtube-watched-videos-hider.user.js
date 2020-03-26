@@ -5,7 +5,7 @@
 // @icon        https://github.com/ibtisammidlet/youtube-watched-videos-hider/raw/master/screenshot.png
 // @include     *.youtube.com/*
 // @description like the name and it's simple and effective
-// @version     1.9
+// @version     2.0
 // @updateURL   https://github.com/ibtisammidlet/youtube-watched-videos-hider/raw/master/youtube-watched-videos-hider.meta.js
 // @downloadURL https://github.com/ibtisammidlet/youtube-watched-videos-hider/raw/master/youtube-watched-videos-hider.user.js
 // @supportURL  https://justinmidlet.blogspot.com/2019/05/youtube-watched-videos-hider.html
@@ -73,7 +73,7 @@ general();
 };
 
 
-if (window.location.href.indexOf('m.youtube.com') != -1) {
+if (window.location.href.indexOf('m.youtube.com') != -1 && window.location.href.indexOf('youtube.com/feed/history') <= 0 ) {
         $('ytm-thumbnail-overlay-resume-playback-renderer .thumbnail-overlay-resume-playback-progress').parent().parent().parent().parent().parent().parent().hide();
 }
 
