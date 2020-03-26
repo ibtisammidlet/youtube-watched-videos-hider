@@ -7,6 +7,10 @@ note: www.youtube.com/feed/history will not hided, To avoid this feature become 
 
 new version with so much improvement:
 
+v2.0
+
+-fix history avoidance not working in mobile
+
 v1.9
 
 -fix the side playlist on watch page partially hided
