@@ -5,7 +5,7 @@
 // @icon        https://github.com/ibtisammidlet/youtube-watched-videos-hider/raw/master/screenshot.png
 // @include     *.youtube.com/*
 // @description like the name and it's simple stable and effective
-// @version     2.2
+// @version     2.3
 // @updateURL   https://github.com/ibtisammidlet/youtube-watched-videos-hider/raw/master/youtube-watched-videos-hider.meta.js
 // @downloadURL https://github.com/ibtisammidlet/youtube-watched-videos-hider/raw/master/youtube-watched-videos-hider.user.js
 // @supportURL  https://justinmidlet.blogspot.com/2019/05/youtube-watched-videos-hider.html
@@ -28,6 +28,12 @@ if (window.location.href.indexOf('www.youtube.com') != -1) {
 
 function channel(){
 if (window.location.href.indexOf('channel/') != -1) {
+$('#overlays.ytd-thumbnail #progress').parent().parent().parent().parent().parent().parent().hide();
+}
+};
+
+function userpg(){
+if (window.location.href.indexOf('/user/') != -1) {
 $('#overlays.ytd-thumbnail #progress').parent().parent().parent().parent().parent().parent().hide();
 }
 };
@@ -65,13 +71,14 @@ $("#playlist #overlays.ytd-thumbnail #progress").parent().parent().parent().pare
 
 
 function general(){
-if (window.location.href.indexOf('results?search_query=') <= 0 && window.location.href.indexOf('channel/') <= 0 && window.location.href.indexOf('www.youtube.com/feed/subscriptions') <= 0 && window.location.href.indexOf('www.youtube.com/watch?v=') <= 0 && window.location.href.indexOf('www.youtube.com/feed/history') <= 0 ) {
+if (window.location.href.indexOf('results?search_query=') <= 0 && window.location.href.indexOf('channel/') <= 0 && window.location.href.indexOf('www.youtube.com/feed/subscriptions') <= 0 && window.location.href.indexOf('www.youtube.com/watch?v=') <= 0 && window.location.href.indexOf('www.youtube.com/feed/history') <= 0 && window.location.href.indexOf('www.youtube.com/user/') <= 0 ) {
 $('#overlays.ytd-thumbnail #progress').parent().parent().parent().parent().parent().parent().parent().parent().hide();
 }
 };
 
 
 channel();
+userpg();
 results();
 subscriptions();
 watch();
