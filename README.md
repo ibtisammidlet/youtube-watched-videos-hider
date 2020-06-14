@@ -57,6 +57,6 @@ v1.0
 
 for firefox >>https://addons.mozilla.org/en-US/firefox/addon/youtube-watched-videos-hider/
 
-main develepment site>>https://justinmidlet.blogspot.com/2019/05/youtube-watched-videos-hider.html
+main develepment site>>https://www.dailyinternetlife.com/2019/05/youtube-watched-videos-hider.html
 
 see preview it working (gif img) >>https://3.bp.blogspot.com/-dx-00Wd0hoQ/XM9FTpO-DTI/AAAAAAAAFOM/hrcadMuAsgINpt1g4hnL3Um0YBEwbyMgACLcBGAs/s320/ffffw.gif
