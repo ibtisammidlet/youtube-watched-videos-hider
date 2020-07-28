@@ -7,6 +7,24 @@ note: www.youtube.com/feed/history will not hided, To avoid this feature become 
 
 new version with so much improvement:
 
+v2.4
+
+-fix expectional bug when viewing channel videos
+
+v2.3
+
+-fix problem due youtube channel page stracture update
+
+v2.2
+
+-solving problem the addon doesn't work in www.youtube.com/watch?v= when side playlist not available
+
+v2.1
+
+-fix the addon hide the user side playlist
+
+-stop opening setting page on every install
+
 v2.0
 
 -fix history avoidance not working in mobile
