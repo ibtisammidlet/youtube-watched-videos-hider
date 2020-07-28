@@ -5,7 +5,7 @@
 // @icon        https://github.com/ibtisammidlet/youtube-watched-videos-hider/raw/master/screenshot.png
 // @include     *.youtube.com/*
 // @description like the name and it's simple stable and effective
-// @version     2.3
+// @version     2.4
 // @updateURL   https://github.com/ibtisammidlet/youtube-watched-videos-hider/raw/master/youtube-watched-videos-hider.meta.js
 // @downloadURL https://github.com/ibtisammidlet/youtube-watched-videos-hider/raw/master/youtube-watched-videos-hider.user.js
 // @supportURL  https://justinmidlet.blogspot.com/2019/05/youtube-watched-videos-hider.html
@@ -33,7 +33,7 @@ $('#overlays.ytd-thumbnail #progress').parent().parent().parent().parent().paren
 };
 
 function userpg(){
-if (window.location.href.indexOf('/user/') != -1) {
+if (window.location.href.indexOf('/user/') != -1 || window.location.href.indexOf('/c/') != -1) {
 $('#overlays.ytd-thumbnail #progress').parent().parent().parent().parent().parent().parent().hide();
 }
 };
@@ -71,7 +71,7 @@ $("#playlist #overlays.ytd-thumbnail #progress").parent().parent().parent().pare
 
 
 function general(){
-if (window.location.href.indexOf('results?search_query=') <= 0 && window.location.href.indexOf('channel/') <= 0 && window.location.href.indexOf('www.youtube.com/feed/subscriptions') <= 0 && window.location.href.indexOf('www.youtube.com/watch?v=') <= 0 && window.location.href.indexOf('www.youtube.com/feed/history') <= 0 && window.location.href.indexOf('www.youtube.com/user/') <= 0 ) {
+if (window.location.href.indexOf('results?search_query=') <= 0 && window.location.href.indexOf('channel/') <= 0 && window.location.href.indexOf('www.youtube.com/feed/subscriptions') <= 0 && window.location.href.indexOf('www.youtube.com/watch?v=') <= 0 && window.location.href.indexOf('www.youtube.com/feed/history') <= 0 && window.location.href.indexOf('www.youtube.com/user/') <= 0 && window.location.href.indexOf('www.youtube.com/c/') <= 0) {
 $('#overlays.ytd-thumbnail #progress').parent().parent().parent().parent().parent().parent().parent().parent().hide();
 }
 };
