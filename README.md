@@ -7,6 +7,10 @@ note: www.youtube.com/feed/history will not hided, To avoid this feature become 
 
 new version with so much improvement:
 
+v2.5
+
+- hide videos "SET REMINDER"
+
 v2.4
 
 -fix expectional bug when viewing channel videos
