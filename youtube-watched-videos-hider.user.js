@@ -5,7 +5,7 @@
 // @icon        https://github.com/ibtisammidlet/youtube-watched-videos-hider/raw/master/screenshot.png
 // @include     *.youtube.com/*
 // @description like the name and it's simple stable and effective
-// @version     2.4
+// @version     2.5
 // @updateURL   https://github.com/ibtisammidlet/youtube-watched-videos-hider/raw/master/youtube-watched-videos-hider.meta.js
 // @downloadURL https://github.com/ibtisammidlet/youtube-watched-videos-hider/raw/master/youtube-watched-videos-hider.user.js
 // @supportURL  https://justinmidlet.blogspot.com/2019/05/youtube-watched-videos-hider.html
