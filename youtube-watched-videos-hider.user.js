@@ -48,6 +48,7 @@ $('#overlays.ytd-thumbnail #progress').parent().parent().parent().parent().paren
 function subscriptions(){
 if (window.location.href.indexOf('www.youtube.com/feed/subscriptions') != -1) {
 $('#overlays.ytd-thumbnail #progress').parent().parent().parent().parent().parent().parent().hide();
+$('#text.style-scope.ytd-toggle-button-renderer.style-compact-gray').parent().parent().parent().parent().parent().parent().hide();
 }
 };
 
