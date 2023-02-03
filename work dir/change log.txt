@@ -1,0 +1,61 @@
+v2.9 next should be added
+-I added my channel to the exceptions list, however I actually have about a dozen channels, so it would be great if we could add a list.... https://www.dailyinternetlife.com/2019/05/youtube-watched-videos-hider.html?showComment=1639069996957
+-decrease interval to 0.5sec or something
+-solve all youtube owner channel id problems
+-add number of hiden videos in channel icon
+v2.8
+-fix always opening setting tap on startup (problem started in recent ff versions)
+-click the icon of the addon to turn the addon off and re-show hidden videos
+-The video will be only hidden if a configurable percentage of the video has been watched (go to setting)
+-fix other bugs
+v2.4
+-fix expectional bug when viewing channel videos
+v2.3
+-fix problem due youtube channel page stracture update
+v2.2
+-solving problem the addon doesn't work in www.youtube.com/watch?v= when side playlist not available
+v2.1
+-fix the addon hide the user side playlist
+-stop opening setting page on every install
+v2.0
+-fix history avoidance not working in mobile
+v1.9
+-fix the side playlist on watch page partially hided
+-www.youtube.com/feed/history will not hided, To avoid this feature become useless in youtube
+v1.8
+resource usage improvement
+fix not working in www.youtube.com/feed/subscriptions and www.youtube.com/watch?v= pages
+v1.7
+resource usage improvement
+fix bugs
+v1.6
+fix some problems with first install
+fix the video div doesn't hided completely because of YouTube structure updates
+v1.5
+-fix the addon not show the real status in startup
+v1.4
+-adding ability to avoid hiding your own videos and playlists
+-add button to switch the addon on/off
+-decrease resource usage
+v1.1
+-fix permission
+v1.0
+-the first version.
+
+known bugs:
+-sometimes youtube use other type of IDs, when she do that the addon will not avoid the user videos, you can stop the addon from working for sometime until you finish, there is no other simple way to avoid that
+-the off/on switch doesn't work in android (there is no debegging option there to see why)
+
+not really problem:
+-the addon might not work in old youtube style, she made spesially to work in the newer version
+-the addon dont hide m.youtube.com/watch?v= side playlist videos
+
+the addon should work in this pages:
+www.youtube.com/feed/subscriptions       (2021-12-12)
+www.youtube.com/watch?v=                 (2021-12-12 in playlist it works but in other the red percent did not showen bc connection)
+www.youtube.com/feed/history             (avoided 2021-12-12)
+www.youtube.com                          (working 2021-12-12)
+www.youtube.com/playlist?list=           (working 2021-12-12) (comparing logged chanel first)(comparing percent)(just related vid + both)
+www.youtube.com/results?search_query=    (working 2021-12-12)
+www.youtube.com/user/                    (working 2020-6-3) deleted by youtube
+www.youtube.com/channel/                 (working 2021-12-12)

@@ -1,0 +1,17 @@
+Can we have an option to only apply this in home screen and not to channels?
+https://addons.mozilla.org/en-US/firefox/addon/youtube-watched-videos-hider/reviews/1803934/
+
+It Blocks videos in menus that I don't want to. It shouldn't block videos in playlists by default in my opinion
+https://addons.mozilla.org/en-US/firefox/addon/youtube-watched-videos-hider/reviews/1835872/
+
+
+----------------
+I've missed actually finding "new" content on youtube without it having been released in the last 10 seconds
+https://addons.mozilla.org/en-US/firefox/addon/youtube-watched-videos-hider/reviews/1795041/
+
+only missing part for me is lack of option to hide "scheduled videos" so I see them when they are available.
+https://addons.mozilla.org/en-US/firefox/addon/youtube-watched-videos-hider/reviews/1702527/
+
+channel exceptions list
+https://www.dailyinternetlife.com/2019/05/youtube-watched-videos-hider.html
+

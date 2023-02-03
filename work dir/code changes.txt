@@ -1,0 +1,5 @@
+- beutified manifest.json
+-added feature requset.txt
+-added what will hidden channels/playlists/others in options.html/options.js
+still script.js
+you are in last /** do just if playlists hidding is on**/ in background.js
